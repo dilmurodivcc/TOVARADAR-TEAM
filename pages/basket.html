@@ -31,6 +31,151 @@
   </head>
   <body>
     <!-- Bu yerga siz korzina pageni yozishingiz kerak -->
+    <header class="bg-light py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="logo.png" alt="Tovaradar" />
+        </div>
+        <div class="search-bar">
+          <input type="text" class="form-control" placeholder="Поиск..." />
+        </div>
+        <div class="user-options d-flex align-items-center">
+          <a href="#" class="mr-3">Вход</a>
+          <a href="#" class="mr-3">Избранное</a>
+          <a href="#" class="mr-3">Корзина</a>
+        </div>
+      </div>
+    </header>
+    <main class="container my-5">
+      <h2>Оформление товара</h2>
+      <div class="order mb-4">
+        <h4>Заказ №1</h4>
+        <div
+          class="order-item d-flex justify-content-between align-items-center"
+        >
+          <div class="item-details d-flex">
+            <img src="phone.png" alt="Xiaomi Mi 10T Pro" class="mr-3" />
+            <div>
+              <p>Смартфон Xiaomi Mi 10T Pro 8/128GB (серый)</p>
+              <p>3060 р</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <input type="number" class="form-control" value="1" />
+          </div>
+        </div>
+        <div
+          class="order-item d-flex justify-content-between align-items-center"
+        >
+          <div class="item-details d-flex">
+            <img src="bulb.jpg" alt="Xiaomi Mi LED Smart Bulb" class="mr-3" />
+            <div>
+              <p>Умная лампа светодиодная Xiaomi Mi LED Smart Bulb White</p>
+              <p>300 р</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <input type="number" class="form-control" value="1" />
+          </div>
+        </div>
+      </div>
+      <div class="order mb-4">
+        <h4>Заказ №2</h4>
+        <div
+          class="order-item d-flex justify-content-between align-items-center"
+        >
+          <div class="item-details d-flex">
+            <img
+              src="../assets/images/phone.png"
+              alt="Xiaomi Mi 10T Pro"
+              class="mr-3"
+            />
+            <div>
+              <p>Смартфон Xiaomi Mi 10T Pro 8/128GB (серый)</p>
+              <p>3060 р</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <input type="number" class="form-control" value="1" />
+          </div>
+        </div>
+        <div
+          class="order-item d-flex justify-content-between align-items-center"
+        >
+          <div class="item-details d-flex">
+            <img src="bulb.jpg" alt="Xiaomi Mi LED Smart Bulb" class="mr-3" />
+            <div>
+              <p>Умная лампа светодиодная Xiaomi Mi LED Smart Bulb White</p>
+              <p>300 р</p>
+            </div>
+          </div>
+          <div class="item-quantity">
+            <input type="number" class="form-control" value="1" />
+          </div>
+        </div>
+      </div>
+      <div class="delivery-address mb-4">
+        <h2>Адрес доставки</h2>
+        <input type="text" class="form-control mb-2" placeholder="Город" />
+        <input type="text" class="form-control mb-2" placeholder="Улица" />
+        <input type="text" class="form-control mb-2" placeholder="Дом" />
+        <input type="text" class="form-control mb-2" placeholder="Корпус" />
+        <input type="text" class="form-control mb-2" placeholder="Квартира" />
+        <input
+          type="text"
+          class="form-control mb-2"
+          placeholder="Комментарий"
+        />
+      </div>
+      <div class="recipient-info mb-4">
+        <h2>Информация о получателе</h2>
+        <input type="text" class="form-control mb-2" placeholder="Имя" />
+        <input type="text" class="form-control mb-2" placeholder="Фамилия" />
+        <input
+          type="email"
+          class="form-control mb-2"
+          placeholder="Электронная почта"
+        />
+        <input type="tel" class="form-control mb-2" placeholder="Телефон" />
+      </div>
+      <div class="payment-method mb-4">
+        <h2>Способ оплаты</h2>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="paymentMethod"
+            id="cash"
+            value="cash"
+            checked
+          />
+          <label class="form-check-label" for="cash">
+            Наличными при доставке
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="paymentMethod"
+            id="card"
+            value="card"
+          />
+          <label class="form-check-label" for="card">
+            Онлайн-оплата картой
+          </label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-block">Оформить заказ</button>
+    </main>
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p>© 2023 Ваша Компания</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
     <script
