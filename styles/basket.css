@@ -2,25 +2,23 @@
   --font-family: "Roboto", sans-serif;
   --second-family: "Exo 2", sans-serif;
 }
+.container{
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.search-bar {
-  margin-top: 10px;
-  margin: 0 auto;
-}
-.logo {
-  margin-bottom: 10px;
-}
-header {
-  margin: 0 auto;
-  background-color: red !;
 }
 .btn-scs {
   background: #2cb708;
   font-size: 18px;
   border-radius: 10px;
 }
-/* Maximal 50 qator code yozish mumkin undan ko'payib ketsa vazifa qaytariladi */
+h4 {
+  margin-bottom: 20px;
+}
+p {
+  margin-top: 30px;
+}
