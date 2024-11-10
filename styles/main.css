@@ -36,5 +36,6 @@ body {
 }
 .gadget .card{
   width: 230px;
+  height: 400px;
 }
 /* Maximal 50 qator code yozish mumkin undan ko'payib ketsa vazifa qaytariladi */
