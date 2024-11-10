@@ -7,5 +7,41 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Maximal 50 qator code yozish mumkin undan ko'payib ketsa vazifa qaytariladi */
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+.cardC .card {
+  box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fcfffc;
+}
+.row2 img {
+  width: 105px;
+  margin-right: 10px;
+}
+.row1 img {
+  width: 250px;
+}
+.like {
+  top: 10px;
+  right: 10px;
+}
+.btn-scs {
+  background: #2cb708;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.gadget .card {
+  width: 230px;
+  height: 400px;
+}
+.card {
+  transition: all 0.3s ease-in-out;
+}
+.cardC .card:hover, .brands-section .card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}

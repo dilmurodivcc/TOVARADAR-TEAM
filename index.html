@@ -4,27 +4,1047 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAVORADAR</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logoTitle.webp"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />А
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Itim&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Syne:wght@400..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="./assets/icons/logo.svg"
-      type="image/x-icon"
-    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+    <header class="container-fluid py-2 mb-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <div class="d-flex align-items-start flex-column">
+            <img
+              src="./assets/images/image_2022-09-05_22-47-27-removebg-preview 1.png"
+              alt="Logo"
+              class="mr-2"
+              style="height: 71px"
+            />
+            <div class="mt-2">
+              <small class="d-flex align-items-center gap-2">
+                <img src="./assets/icons/location.svg" alt="" />Москва,
+                Московская область
+                <img src="./assets/icons/arrowDown.svg" alt=""
+              /></small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <button
+              class="btn mr-3 d-flex text-white align-items-center gap-2 btn-scs"
+            >
+              <img src="./assets/icons/btn-img.svg" alt="" />Каталог
+            </button>
+          </div>
+        </div>
+        <div class="input-group" style="width: 420px">
+          <input
+            type="text"
+            class="form-control wi"
+            placeholder="Я ищу..."
+            style="
+              box-shadow: none;
+              border: 2px solid #2cb708;
+              border-radius: 10px 0 0 10px;
+            "
+          />
+          <div
+            class="input-group-append d-flex align-items-sreach justify-content-between"
+          >
+            <button
+              class="btn btn-scs"
+              type="button "
+              style="box-shadow: none; border-radius: 0px 10px 10px 0px"
+            >
+              <img src="./assets/icons/search.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <div class="mx-2 text-center">
+            <img src="./assets/icons/User.svg" alt="" />
+            <small class="d-block mt-2">Войти</small>
+          </div>
+          <div class="mx-2 text-center position-relative">
+            <img
+              src="./assets/icons/290141_bag_case_handbag_purse_shopping_icon 1.svg"
+              alt=""
+            />
+            <small class="d-block mt-2">Заказы</small>
+            <span
+              class="rounded-circle badge badge-success position-absolute"
+              style="background: #2cb708; top: -10px; right: 0px"
+              >5</span
+            >
+          </div>
+          <div class="mx-2 text-center position-relative">
+            <img src="./assets/icons/172492_like_icon 1.svg" alt="" />
+            <span
+              class="rounded-pill badge badge-success position-absolute"
+              style="top: -10px; right: 0px; background: #2cb708"
+              >12</span
+            >
+            <small class="d-block mt-2">Избранные</small>
+          </div>
+          <div class="mx-2 text-center position-relative">
+            <img src="./assets/icons/Basket.svg" alt="" />
+            <span
+              class="rounded-circle badge badge-success position-absolute"
+              style="background: #2cb708; top: -10px; right: 0px"
+              >9</span
+            >
+            <small class="d-block mt-2">Корзина</small>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="mt-4 align-items-center d-flex my-4 justify-content-center mb-5"
+    >
+      <div class="container d-flex justify-content-center align-items-center">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide w-80"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/image 2.png"
+                class="d-block w-80"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/image 2.png"
+                class="d-block w-80"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/image 2.png"
+                class="d-block w-80"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="cardC border-0 mt-5">
+      <div class="container">
+        <div class="row row1">
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture.png"
+                class="card-img-top"
+                alt="Electronics"
+              />
+              <div class="card-body text-center">Электроника</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (1).png"
+                class="card-img-top"
+                alt="Household Items"
+              />
+              <div class="card-body text-center">Бытовые товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (2).png"
+                class="card-img-top"
+                alt="Books, Hobbies"
+              />
+              <div class="card-body text-center">Книги, хобби, канцелярия</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (3).png"
+                class="card-img-top"
+                alt="Food Products"
+              />
+              <div class="card-body text-center">Продукты питания</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (13).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (14).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (15).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (16).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (17).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (18).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (19).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (20).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (13).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (14).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (15).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (16).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (17).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (18).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (9).png"
+                class="img-fluid"
+                alt="Children's Items"
+                style="height: 93px"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (13).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (14).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (15).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (16).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gadget">
+      <div class="container my-4">
+        <h5 class="mb-4 fs-3">Популярная компьютерная техника</h5>
+        <div class="row">
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (8).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                <p class="font-weight-bold small">
+                  Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver
+                </p>
+                <p class="small text-muted mb-4">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (9).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <div class="mb-4">
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver
+                  </p>
+                  <p class="small text-muted">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (10).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div class="mb-3">
+                  <p class="mb-0 text-dark fw-bold">от 3001 ₽</p>
+                  <p class="font-weight-bold small">
+                    Умная колонка Яндекс Станция Мини
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (11).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div class="mb-3">
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Умная колонка Яндекс Станция Мини
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="card d-flex flex-column justify-content-between text-start border-0 d-block"
+            >
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (12).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                  style="width: 220px"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div>
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Зеркальный фотоаппарат Canon EOS 6D Body
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (8).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                <p class="font-weight-bold small">
+                  Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver
+                </p>
+                <p class="small text-muted mb-4">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (9).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <div class="mb-4">
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver
+                  </p>
+                  <p class="small text-muted">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (10).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div class="mb-3">
+                  <p class="mb-0 text-dark fw-bold">от 3001 ₽</p>
+                  <p class="font-weight-bold small">
+                    Умная колонка Яндекс Станция Мини
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (11).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div class="mb-3">
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Умная колонка Яндекс Станция Мини
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div
+              class="card d-flex flex-column justify-content-between text-start border-0 d-block"
+            >
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (12).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                  style="width: 220px"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div
+                class="card-body p-2 d-flex flex-column justify-content-between align-items-start"
+              >
+                <div>
+                  <p class="mb-0 text-dark fw-bold">от 3000 ₽</p>
+                  <p class="font-weight-bold small">
+                    Зеркальный фотоаппарат Canon EOS 6D Body
+                  </p>
+                  <p class="small text-muted mb-2">26 предложений</p>
+                </div>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center w-100 d-block">
+          <button
+            class="btn btn-outline-secondary w-100 border-0 text-dark"
+            style="background: #efefef"
+          >
+            Показать еще
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container d-flex justify-content-center">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide w-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./assets/images/image 1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./assets/images/image 1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/image 1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section my-5">
+      <div class="container">
+        <h5 class="text-center mb-4">Представительные бренды</h5>
+        <div
+          class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3"
+        >
+          <div class="col">
+            <img
+              src="./assets/icons/logo01.png"
+              class="img-fluid card border-0"
+              alt="Sber"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo02.png"
+              class="img-fluid card border-0"
+              alt="Dyson"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo03.png"
+              class="img-fluid card border-0"
+              alt="Apple"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo04.png"
+              class="img-fluid card border-0"
+              alt="Sber"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo05.png"
+              class="img-fluid card border-0"
+              alt="Dyson"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo06.png"
+              class="img-fluid card border-0"
+              alt="Apple"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo01 (1).png"
+              class="img-fluid card border-0"
+              alt="Sber"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo02 (1).png"
+              class="img-fluid card border-0"
+              alt="Dyson"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo03 (1).png"
+              class="img-fluid card border-0"
+              alt="Apple"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo04 (1).png"
+              class="img-fluid card border-0"
+              alt="Sber"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo05 (1).png"
+              class="img-fluid card border-0"
+              alt="Dyson"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo06 (1).png"
+              class="img-fluid card border-0"
+              alt="Apple"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo01 (2).png"
+              class="img-fluid card border-0"
+              alt="Sber"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo02 (2).png"
+              class="img-fluid card border-0"
+              alt="Dyson"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/icons/logo03 (2).png"
+              class="img-fluid card border-0"
+              alt="Apple"
+            />
+          </div>
+
+          <!-- Add "All Brands" Button -->
+          <div class="col">
+            <button
+              class="btn w-100 h-100 border-0 rounded-3"
+              style="background-color: #EFEFEF"
+            >
+              Все производители
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
