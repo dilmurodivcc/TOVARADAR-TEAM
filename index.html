@@ -30,11 +30,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif !important;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header class="container-fluid py-2 mb-5">
@@ -57,8 +53,7 @@
           </div>
           <div class="d-flex align-items-center">
             <button
-              class="btn mr-3 d-flex text-white align-items-center gap-2"
-              style="background: #2cb708; font-size: 18px"
+              class="btn mr-3 d-flex text-white align-items-center gap-2 btn-scs"
             >
               <img src="./assets/icons/btn-img.svg" alt="" />Каталог
             </button>
@@ -79,13 +74,9 @@
             class="input-group-append d-flex align-items-sreach justify-content-between"
           >
             <button
-              class="btn"
-              type="button"
-              style="
-                background: #2cb708;
-                box-shadow: none;
-                border-radius: 0px 10px 10px 0px;
-              "
+              class="btn btn-scs"
+              type="button "
+              style="box-shadow: none; border-radius: 0px 10px 10px 0px"
             >
               <img src="./assets/icons/search.svg" alt="" />
             </button>
@@ -130,12 +121,14 @@
       </div>
     </header>
 
-    <section class="mt-4 align-items-center d-flex my-4 justify-content-center">
+    <section
+      class="mt-4 align-items-center d-flex my-4 justify-content-center mb-5"
+    >
       <div
         id="carouselExampleIndicators"
         class="carousel slide w-80"
         data-bs-ride="carousel"
-        style="margin: 0 300px;"
+        style="margin: 0 300px"
       >
         <div class="carousel-indicators">
           <button
@@ -161,13 +154,25 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/images/image 2.png" class="d-block w-80" alt="..." />
+            <img
+              src="./assets/images/image 2.png"
+              class="d-block w-80"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/image 2.png" class="d-block w-80" alt="..." />
+            <img
+              src="./assets/images/image 2.png"
+              class="d-block w-80"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/image 2.png" class="d-block w-80" alt="..." />
+            <img
+              src="./assets/images/image 2.png"
+              class="d-block w-80"
+              alt="..."
+            />
           </div>
         </div>
         <button
@@ -191,6 +196,463 @@
       </div>
     </section>
 
+    <section class="cardC border-0 mt-5">
+      <div class="container">
+        <div class="row row1">
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture.png"
+                class="card-img-top"
+                alt="Electronics"
+              />
+              <div class="card-body text-center">Электроника</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (1).png"
+                class="card-img-top"
+                alt="Household Items"
+              />
+              <div class="card-body text-center">Бытовые товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (2).png"
+                class="card-img-top"
+                alt="Books, Hobbies"
+              />
+              <div class="card-body text-center">Книги, хобби, канцелярия</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card border-0 d-flex flex-column align-items-center">
+              <img
+                src="./assets/images/picture (3).png"
+                class="card-img-top"
+                alt="Food Products"
+              />
+              <div class="card-body text-center">Продукты питания</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (7).png"
+                class="img-fluid"
+                alt="Beauty and Care"
+              />
+              <div class="card-body p-0">Красота и уход</div>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (4).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (5).png"
+                class="img-fluid"
+                alt="Clothing, Shoes & Accessories"
+              />
+              <div class="card-body p-0">Одежда, обувь и аксессуары</div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card d-flex flex-row align-items-center p-4 border-0">
+              <img
+                src="./assets/images/picture (6).png"
+                class="img-fluid"
+                alt="Children's Items"
+              />
+              <div class="card-body p-0">Детские товары</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gadget">
+      <div class="container my-4">
+        <h5 class="mb-4">Популярная компьютерная техника</h5>
+        <div class="row">
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (9).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-muted">от 3000 ₽</p>
+                <p class="font-weight-bold small">Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver   </p>
+                <p class="small text-muted mb-2">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (8).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-muted">от 3000 ₽</p>
+                <p class="font-weight-bold small">Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
+                <p class="small text-muted mb-2">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (9).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-muted">от 3000 ₽</p>
+                <p class="font-weight-bold small">Название товара</p>
+                <p class="small text-muted mb-2">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (8).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-muted">от 3000 ₽</p>
+                <p class="font-weight-bold small">Умная колонка Яндекс 
+                  Станция Мини</p>
+                <p class="small text-muted mb-2">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4" style="flex: 0 0 20%; max-width: 20%">
+            <div class="card text-start border-0 d-block">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/picture (9).png"
+                  class="card-img-top img-fluid mt-5"
+                  alt="Product"
+                />
+                <span
+                  class="badge badge-warning position-absolute"
+                  style="top: 10px; left: 10px"
+                  >Новинка</span
+                >
+
+                <img
+                  src="./assets/icons/like.svg"
+                  class="position-absolute like"
+                />
+              </div>
+              <div class="card-body p-2">
+                <p class="mb-0 text-muted">от 3000 ₽</p>
+                <p class="font-weight-bold small">Название товара</p>
+                <p class="small text-muted mb-2">26 предложений</p>
+                <button
+                  class="btn d-flex text-white align-items-center btn-scs px-5"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat this div for each card -->
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-outline-secondary">Показать еще</button>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
