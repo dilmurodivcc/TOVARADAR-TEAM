@@ -7,4 +7,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.search-bar {
+  margin-top: 10px;
+  margin: 0 auto;
+}
+.logo {
+  margin-bottom: 10px;
+}
+header {
+  margin: 0 auto;
+  background-color: red !;
+}
+.btn-scs {
+  background: #2cb708;
+  font-size: 18px;
+  border-radius: 10px;
+}
 /* Maximal 50 qator code yozish mumkin undan ko'payib ketsa vazifa qaytariladi */
