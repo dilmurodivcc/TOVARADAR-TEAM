@@ -8,3 +8,10 @@
   box-sizing: border-box;
 }
 /* Maximal 50 qator code yozish mumkin undan ko'payib ketsa vazifa qaytariladi */
+.form-control{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin: 0 auto;
+  
+}
